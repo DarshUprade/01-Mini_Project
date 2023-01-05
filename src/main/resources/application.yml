@@ -1,0 +1,24 @@
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/mysqldb
+      username: root
+      password: java
+  jpa:
+    hibernate:
+      ddl-auto: update
+plan-api:
+     message:
+       planSaveSucc: Plan Save Successfully..
+       planSaveFaild: plan save to faild...
+       planUpdateSucc: Plan Update Successfull..
+       planUpdateFaild: Plan Updation Faild...
+       planDeleteSucc: Plan Deleted Sucessfully...
+       planDeleteFaild: Plan Deletion Faild...
+       planStatusChanged: Plan Status Changed Successfully...
+       planStatusChangedFaild: Plan Status Changed Faild...
+       
+#    driver-class-name: oracle.jdbc.driver.OracleDriver
+#    password: 'java '
+#    url: jdbc:oracle:thin:@localhost:1521:xe
+#    username: darshan

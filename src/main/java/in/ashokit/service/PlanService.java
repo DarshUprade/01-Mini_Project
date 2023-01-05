@@ -17,7 +17,9 @@ public interface PlanService {
 	
 	public boolean deletePlanById(Integer planId);
 	
-	public boolean planStatusChange(Integer planId,String status);
+	public boolean planStatusChange(Integer planId,String status) ;
+		
+	
 	
 
 }

@@ -14,8 +14,10 @@ import in.ashokit.repo.PlanRepo;
 
 @Service
 public class PlanServiceImpl implements PlanService {
+	
 	@Autowired
 	private PlanRepo planRepo;
+	
 	@Autowired
 	private PlanCategoryRepo planCategoryRepo;
 
@@ -31,7 +33,7 @@ public class PlanServiceImpl implements PlanService {
 	}
 	@Override
 	public boolean savePlan(Plan plan) {
-		Plan saved=planRepo.save(plan);
+		Plan saved = planRepo.save(plan);
 		/*	if(saved.getPlanId()!=null) {
 			return true;
 		}else {                                                        //simple if else
@@ -43,8 +45,8 @@ public class PlanServiceImpl implements PlanService {
 
 	@Override
 	public List<Plan> getAllPlans() {
-
-		return planRepo.findAll();
+		List<Plan> findAll = planRepo.findAll();
+		return findAll;
 	}
 
 	@Override
